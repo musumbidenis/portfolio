@@ -567,6 +567,27 @@ a:hover
     text-align: center;
 }
 
+.about-title .title {
+    font-size: 50px;
+    display: inline-flex;
+    flex-direction: column;
+    margin: 10px 35px;
+  }
+  .title > span {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  span:after, span:before {
+    content: '';
+    background: black;
+    height: 1px;
+    flex: 0 0 60%;
+    margin: 0 10px;
+  }
+
+
 .about .container-fluid
 {
     max-width: 900px;
@@ -589,6 +610,8 @@ a:hover
 
 .about p
 {
+    text-align: justify;
+
     line-height: 1.7em;
 
     margin-bottom: 2.4em;
