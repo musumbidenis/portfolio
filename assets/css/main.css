@@ -1,158 +1,4 @@
- /*--------------------*/
-
- /* MENU BUTTON */
-
- /*--------------------*/
-
- .mu-primary-btn {
-     background-color: transparent;
-     border-radius: 4px;
-     border: 2px solid #ffffff;
-     color: #fff;
-     display: inline-block;
-     font-size: 14px;
-     font-weight: 700;
-     letter-spacing: 1.5px;
-     padding: 12px 35px;
-     -webkit-transition: all 0.5s;
-     transition: all 0.5s;
- }
-
- .mu-primary-btn:hover, .mu-primary-btn:focus {
-     background-color: #fff;
- }
-
- .mu-menu-btn {
-     position: fixed;
-     right: 15%;
-     top: 50px;
-     color: #fff;
-     font-size: 25px;
-     border: 2px solid #fff;
-     padding: 5px 14px;
-     z-index: 999;
-     -webkit-transition: all 0.5s;
-     -o-transition: all 0.5s;
-     transition: all 0.5s;
- }
-
- .mu-menu-btn:hover, .mu-menu-btn:focus {
-     border: 2px solid #fff;
- }
-
- /*--------------------*/
-
- /* MENU */
-
- /*--------------------*/
-
- .mu-menu-close-btn {
-     display: block;
-     font-size: 25px;
-     height: 48px;
-     position: absolute;
-     right: 15%;
-     top: 55px;
-     width: 48px;
-     -webkit-transition: color 0.3s ease-in-out 0s;
-     transition: color 0.3s ease-in-out 0s;
- }
-
- .mu-menu-close-btn .mu-line {
-     background-color: transparent;
-     display: block;
-     position: relative;
-     height: 4px;
-     width: 38px;
- }
-
- .mu-menu-close-btn .mu-line::before {
-     background-color: #fff;
-     content: "";
-     display: block;
-     height: 4px;
-     position: absolute;
-     top: 16px;
-     -webkit-transform: rotate(-45deg);
-     transform: rotate(-45deg);
-     -webkit-transition: -webkit-transform 0.3s ease-out 0s;
-     transition: -webkit-transform 0.3s ease-out 0s;
-     transition: transform 0.3s ease-out 0s;
-     transition: transform 0.3s ease-out 0s, -webkit-transform 0.3s ease-out 0s;
-     width: 38px;
-     z-index: -1;
- }
-
- .mu-menu-close-btn .mu-line::after {
-     background-color: #fff;
-     content: "";
-     display: block;
-     height: 4px;
-     position: absolute;
-     top: 16px;
-     -webkit-transform: rotate(45deg);
-     transform: rotate(45deg);
-     -webkit-transition: -webkit-transform 0.3s ease-out 0s;
-     transition: -webkit-transform 0.3s ease-out 0s;
-     transition: transform 0.3s ease-out 0s;
-     transition: transform 0.3s ease-out 0s, -webkit-transform 0.3s ease-out 0s;
-     width: 38px;
-     z-index: -1;
- }
-
- .mu-menu-close-btn:hover .mu-line:before, .mu-menu-close-btn:hover .mu-line:after {
-     -webkit-transform: rotate(0deg);
-     transform: rotate(0deg);
- }
-
- /* Menu overlay */
-
- .mu-menu-full-overlay {
-     background-color: rgba(0, 0, 0, 0.94);
-     color: #fff;
-     height: 100%;
-     left: 0;
-     position: fixed;
-     right: 0;
-     text-align: center;
-     top: 0;
-     visibility: hidden;
-     -webkit-transition: all 0.5s;
-     -o-transition: all 0.5s;
-     transition: all 0.5s;
-     width: 100%;
-     z-index: 99999;
- }
-
- .mu-menu-full-overlay-show {
-     visibility: visible;
- }
-
- .mu-menu-full-overlay-inner {
-     display: inline;
-     float: left;
-     padding: 12% 15%;
-     width: 100%;
- }
-
- .mu-menu ul li {
-     list-style: none;
- }
-
- .mu-menu ul li a {
-     color: #fff;
-     display: inline-block;
-     font-size: 35px;
-     font-weight: 700;
-     line-height: 1.35;
-     text-align: center;
-     margin-bottom: 10px;
-     -webkit-transition: all 0.5s;
-     -o-transition: all 0.5s;
-     transition: all 0.5s;
- }
-
- /*--------------------*/
+/*--------------------*/
 
  /* PORTFOLIO */
 
@@ -183,6 +29,31 @@
  .row {
      margin: 8px 50px;
  }
+
+ .row p a{
+    color: #8ac53f;
+}
+
+.modal ul a{
+    color: #8ac53f; 
+}
+
+ .row p a:hover{
+     color: black;
+ }
+
+ .row .btn{
+    background-color: #211F1F;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+ }
+ 
+.row .btn:hover {
+    background-color: #525050;
+  }
 
  /* Add padding BETWEEN each column */
 

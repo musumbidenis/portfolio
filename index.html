@@ -21,7 +21,9 @@
     <link href="https://fonts.googleapis.com/css?family=Bellefair&amp;subset=latin-ext" rel="stylesheet">
 
     <!-- STYLESHEETS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/plugins.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 
@@ -84,15 +86,37 @@
                     <img src="assets/img/portfolio/cake-ordering.png" alt="" style="width:100%; height: 200px;">
                     <h3>Cake Ordering App</h3>
                     <hr>
-                    <p>In light with the current Covid-19 pandemic paralysing the world economically, 
+                    <p>In light with the current Covid-19 pandemic paralysing the world economically,
                         with governments imposing restrictions to curb the spread of the virus; such as
-                        lockdowns and transport ceasation, the Cake Ordering App allows clients to order 
-                        their favourite cakes via <b>SMS</b> and have them delivered to their speciified address.
-                        <a href="">..More details</a><br><br>
-                        <strong>| Technologies |</strong> <br> 
+                        lockdowns and transport ceasation, the Cake Ordering App allows clients to order
+                        their favourite cakes via <b>SMS</b> and have them delivered to their specified address.
+                        Businesses can adjust themselves so as to afloat amid this pandemic
+                        <a data-toggle="modal" href="#cake-ordering">...More details</a><br><br>
+                        <strong>| Technologies |</strong> <br>
                         Flutter framework
                         <hr>
                     </p>
+
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="cake-ordering" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <h4 class="modal-title">Cake Ordering App</h4>
+                                    <p>Some text in the modal.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
             <div class="column">
@@ -101,12 +125,12 @@
                     <h3>Asset Management</h3>
                     <hr>
                     <p>A School project; Asset Management System is <b>Web based</b> proposal for University's
-                        Computer Laboratory where Lab technicians can keep track of the interaction between 
-                        the users and the Lab Assets. Laboratory technicians keep generate QR Codes for each 
-                        asset in the Laboratory, that can be useful to track an asset.
-                        <a href="#">..More details</a><br><br>
+                        Computer Laboratory where Lab technicians can keep track of the interaction between
+                        the users and the Lab Assets. Laboratory technicians keep generate QR Codes for each
+                        asset in the Laboratory, that can be useful to track an asset
+                        <a href="#">...More details</a><br><br>
                         <strong>| Technologies |</strong> <br>
-                        Bootstrap  (Front-end framework), <br>
+                        Bootstrap (Front-end framework), <br>
                         Laravel (Backend-framework)
                         <hr>
                     </p>
@@ -117,11 +141,12 @@
                     <img src="assets/img/portfolio/asset-tracking.png" alt="" style="width:100%; height: 200px;">
                     <h3>Asset Tracking App</h3>
                     <hr>
-                    <p>Asset Tracking Application is an <b>Android based</b> solution for the users of the Asset Management 
-                        System. The users scans an Asset QR Code and initiates a session in the Computer Lab, and 
-                        consequently scans the QR Code upon completion to terminate current session. Timestamps for sessions and 
-                        and details of the user are stored in the database for tracking purposes.
-                        <a href="#">..More details</a><br> <br>
+                    <p>Asset Tracking Application is an <b>Android based</b> solution for the users of the Asset
+                        Management
+                        System. The users scans an Asset QR Code and initiates a session in the Computer Lab, and
+                        consequently scans the QR Code upon completion to terminate current session. Timestamps for
+                        sessions and and details of the user are stored in the database for tracking purposes
+                        <a href="#">...More details</a><br> <br>
                         <strong>| Technologies |</strong> <br>
                         Flutter framework
                         <hr>
@@ -133,11 +158,12 @@
                     <img src="assets/img/portfolio/timetable-app.png" alt="" style="width:100%; height: 200px;">
                     <h3>Timetable App</h3>
                     <hr>
-                    <p>An <b>Android based</b> solution tailored for university students to easily check on updates to their Class 
-                        Timetable without having to cram the unit sessions they have in a week. Class Representatives upload their respective 
-                        units with their session durations and fellow classmates can access the timetable on their phones wihout having 
-                        to nagging the Class Representatives for Class confirmations.
-                        <a href="#">..More details</a><br> <br>
+                    <p>An <b>Android based</b> solution tailored for university students to easily check on updates to
+                        their Class
+                        Timetable without having to cram the unit sessions they have in a week. Class Representatives
+                        upload their respective units with their session durations and fellow classmates can access the 
+                        timetable on their phones wihout having to nagging the Class Representatives for Class confirmations
+                        <a href="#">...More details</a><br> <br>
                         <strong>| Technologies |</strong> <br>
                         Flutter framework
                         <hr>
@@ -149,15 +175,22 @@
                     <img src="assets/img/portfolio/timetable.png" alt="" style="width:100%; height: 200px;">
                     <h3>Timetable App-Backend</h3>
                     <hr>
-                    <p>A <b>Web based</b> solution for the Class Representatives upload their respective 
-                        units with their session durations and users of the <i>Timetable 
-                        Application</i> can acess the units session details on the phones via REST-APIs.
-                        <a href="#">..More details</a><br><br>
+                    <p>A <b>Web based</b> solution for the Class Representatives to upload their respective
+                        units with their session durations and users of the <i>Timetable Application</i> can
+                        access the units session details on the phones without seeking confirmations for 
+                        every unit from the Class Representatives. Class Representatives can easily upload 
+                        the details
+                        <a href="#">...More details</a><br><br>
                         <strong>| Technologies |</strong> <br>
-                        Bootstrap  (Front-end framework), <br>
+                        Bootstrap (Front-end framework), <br>
                         Laravel (Backend-framework)
                         <hr>
                     </p>
+
+
+
+
+
                 </div>
             </div>
             <div class="column">
@@ -165,16 +198,106 @@
                     <img src="assets/img/portfolio/music-blog.png" alt="" style="width:100%; height: 200px;">
                     <h3>Music Blog</h3>
                     <hr>
-                    <p>Music-Blog project is a <b>Web based</b> application developed for Kaka Dave, a Kenyan upcoming Music
-                        artiste. Its a dynamic Website, where the musician can upload his Music and fans can listen to the music
-                        from any place. And also acts as medium for advertisement of the artist where fans and event organisers 
-                        can get in touch.
-                        <a href="#">..More details</a><br><br>
+                    <p>Music-Blog project is a <b>Web based</b> application developed for Kaka Dave, a Kenyan upcoming
+                        Music artiste. Its a dynamic Website, where the musician can upload his Music and fans can listen to
+                        the music from any place. And also acts as medium for advertisement of the artist where fans and event
+                        organisers can get in touch
+                        <a data-toggle="modal" href="#music-blog">...More details</a><br><br>
                         <strong>| Technologies |</strong> <br>
-                        Bootstrap  (Front-end framework), <br>
+                        Bootstrap (Front-end framework), <br>
                         Laravel (Backend-framework)
                         <hr>
                     </p>
+
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="music-blog" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <h4 class="modal-title">Music-Blog</h4>
+                                    <p>
+
+                                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+
+
+                                            <!-- Wrapper for slides -->
+                                            <div class="carousel-inner">
+                                                <div class="item active">
+                                                    <img class="img-responsive" src="assets/img/music-blog/01.png"
+                                                        alt="...">
+                                                </div>
+                                                <div class="item">
+                                                    <img class="img-responsive" src="assets/img/music-blog/06.png"
+                                                        alt="...">
+                                                </div>
+                                                <div class="item">
+                                                    <img class="img-responsive" src="assets/img/music-blog/02.png"
+                                                        alt="...">
+                                                </div>
+                                                <div class="item">
+                                                    <img class="img-responsive" src="assets/img/music-blog/03.png"
+                                                        alt="...">
+                                                </div>
+                                                <div class="item">
+                                                    <img class="img-responsive" src="assets/img/music-blog/04.png"
+                                                        alt="...">
+                                                </div>
+                                                <div class="item">
+                                                    <img class="img-responsive" src="assets/img/music-blog/05.png"
+                                                        alt="...">
+                                                </div>
+                                            </div>
+
+                                            <!-- Controls -->
+                                            <a class="left carousel-control" href="#carousel-example-generic"
+                                                role="button" data-slide="prev">
+                                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                            </a>
+                                            <a class="right carousel-control" href="#carousel-example-generic"
+                                                role="button" data-slide="next">
+                                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                            </a>
+                                        </div>
+                                        <i><strong>-- Application Screenshots --</strong></i>
+                                    </p>
+
+                                    <p><strong>| Description |</strong><br>
+                                        Check out the Web Application <a target="_blank"
+                                            href="http://music-blog.musumbidenis.co.ke/">here</a>. 
+                                        For testing purposes, access the admin dashboard from <a target="_blank"
+                                            href="http://music-blog.musumbidenis.co.ke/admin">here</a>. 
+                                        Use the following credentials to gain access, Email Address:
+                                        <i>admin@test.com</i> and Password: <i>admin1234</i>. 
+                                        <br>
+                                        Are you a <b>Web artisan?</b> Any contributions you make are greatly appreciated.
+                                        Contributions are what make the open source community such an amazing place to
+                                        be learn, inspire, and create.
+
+                                        <ul>
+                                            <li>Fork the Project <a target="_blank" href="https://github.com/musumbidenis/music-blog">here</a></li>
+                                            <li>Create your Branch</li>
+                                            <li>Commit your Changes</li>
+                                            <li>Push to the Branch</li>
+                                            <li>Open a Pull Request</li>
+                                        </ul>
+                                        <a target="_blank" href="https://github.com/musumbidenis/music-blog"><button class="btn"><i class="fa fa-github"></i> Source code</button></a>
+                                    </p>
+
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
             <!-- END GRID -->
@@ -183,7 +306,6 @@
 
     </div>
     <!-- /PORTFOLIO -->
-
 
     <!-- FOOTER -->
     <div class="footer">
